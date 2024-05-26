@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nihon</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @font-face {
+            font-family: 'Segoe UI Symbol';
+            src: url('https://fonts.gstatic.com/l/font?kit=06TM5qQatenNjy_j_zecYw&skey=21e7ed3f6d645c9a&v=v12') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bugbounty.html">Bug Bounty Program</a></li>
+        </ul>
+    </nav>
     <div class="background">
         <div class="circle circle-1"></div>
         <div class="circle circle-2"></div>
@@ -19,25 +35,25 @@
             <img src="assets/logo.png" alt="Nihon Logo" class="logo">
             <span class="nihon">ihon</span>
         </h1>
-        <p class="description animate-fadeIn">- Where Imagination Meets Reality -</p>
-        <a href="download.html" class="go-back animate-fadeIn">Download</a>
+        <p class="description animate-fadeIn">- Where imagination meets reality -</p>
+        <a href="#" class="go-back animate-fadeIn">Coming Soon</a>
     </div>
     <section>
         <h2 class="section-title animate-fadeIn">About Nihon</h2>
-        <p class="section-description animate-fadeIn">Nihon is one of the best Roblox exploits designed to revolutionize Roblox. </p>
+        <p class="section-description animate-fadeIn">Nihon is one of the best Roblox exploits designed to revolutionize Roblox.</p>
         <p class="section-description animate-fadeIn">With its user interface and beautiful features, Nihon allows its users to exploit like never before.</p>
         <ul class="info-list">
             <li class="info-item animate-fadeIn">
-                <div class="info-icon">🌍</div>
-                <p class="info-text">Founded in 2021 with a mission to connect people worldwide and provide a trusted service</p>
+                <div class="info-icon" style="font-family: 'Segoe UI Symbol';">&#x1f30d;</div>
+                <p class="info-text">Founded in 2020 with a mission to connect people worldwide and provide a trusted service.</p>
             </li>
             <li class="info-item animate-fadeIn">
-                <div class="info-icon">🏆</div>
+                <div class="info-icon" style="font-family: 'Segoe UI Symbol';">&#x1f4e3;</div>
                 <p class="info-text">Developed by the best developers in the industry, Nihon offers an unparalleled experience.</p>
-            </li>    
+            </li>
             <li class="info-item animate-fadeIn">
-                <div class="info-icon">👥</div>
-                <p class="info-text">Trusted by many of satisfied users globally who appreciate Nihon's power and reliability</p>
+                <div class="info-icon" style="font-family: 'Segoe UI Symbol';">&#x1f5fe;</div>
+                <p class="info-text">Trusted by many satisfied users globally who appreciate Nihon's power and reliability.</p>
             </li>
         </ul>
     </section>
@@ -45,35 +61,36 @@
         <h2 class="section-title animate-fadeIn">Features</h2>
         <ul class="features-list">
             <li class="feature-item animate-fadeIn">
-                <div class="feature-icon">🚀</div>
+                <div class="feature-icon" style="font-family: 'Segoe UI Symbol';">&#x1f50b;</div>
                 <h3 class="feature-title">Blazing Fast Performance</h3>
                 <p class="feature-description">Experience lightning-fast loading times and smooth navigation.</p>
             </li>
             <li class="feature-item animate-fadeIn">
-                <div class="feature-icon">🔒</div>
+                <div class="feature-icon" style="font-family: 'Segoe UI Symbol';">&#x1f510;</div>
                 <h3 class="feature-title">Enhanced Security</h3>
                 <p class="feature-description">Your data is protected with state-of-the-art encryption and secure protocols.</p>
             </li>
             <li class="feature-item animate-fadeIn">
-                <div class="feature-icon">🎨</div>
+                <div class="feature-icon" style="font-family: 'Segoe UI Symbol';">&#x1f3a8;</div>
                 <h3 class="feature-title">Customizable Interface</h3>
                 <p class="feature-description">Personalize your Nihon experience with themes, layouts, and custom settings.</p>
             </li>
             <li class="feature-item animate-fadeIn">
-                <div class="feature-icon">💻</div>
-                <h3 class="feature-title">System Compatibility</h3>
-                <p class="feature-description">Access Nihon on Windows 10/11</p>
+                <div class="feature-icon" style="font-family: 'Segoe UI Symbol';">&#x1f49a;</div>
+                <h3 class="feature-title">Bug Bounty Program</h3>
+                <p class="feature-description">Get rewarded for reporting bugs and vulnerabilities.</p>
             </li>
         </ul>
     </section>
     <section class="discord-section animate-fadeIn">
         <h2 class="section-title">Join Our Community</h2>
         <p class="section-description">Connect with like-minded individuals, discuss ideas, and get support from our vibrant community.</p>
-        <a href="https://discord.gg/3Syz24X2UD" class="go-back animate-fadeIn" target="\_blank">Join Discord</a>
+        <a href="https://discord.gg/3Syz24X2UD" class="go-back animate-fadeIn" target="_blank">Join Discord</a>
     </section>
     <footer>
-        <p class="made-with-love">Made With <span class="heart">❤</span> By Nihon Devs</p>
+        <p class="made-with-love">Made With <span class="heart" style="font-family: 'Segoe UI Symbol';">&#x2764;</span> By Nihon Devs</p>
     </footer>
+
     <script>
         function isElementInViewport(el) {
             const rect = el.getBoundingClientRect();
@@ -84,7 +101,7 @@
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
         }
-    
+
         function animateElements() {
             const sections = document.querySelectorAll('section');
             sections.forEach(section => {
@@ -93,9 +110,33 @@
                 }
             });
         }
-    
-        window.addEventListener('load', animateElements);
+
+        function disableDragImages() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('dragstart', ev => {
+                    ev.preventDefault();
+                });
+            });
+        }
+
+        function disableDragNavLinks() {
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('dragstart', ev => {
+                    ev.preventDefault();
+                });
+            });
+        }
+
+        window.addEventListener('load', () => {
+            animateElements();
+            disableDragImages();
+            disableDragNavLinks();
+        });
+
         window.addEventListener('scroll', animateElements);
     </script>
 </body>
+
 </html>
