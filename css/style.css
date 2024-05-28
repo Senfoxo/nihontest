@@ -12,6 +12,7 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    overflow-x: hidden;
 }
 
 img {
@@ -76,7 +77,6 @@ img {
 }
 
 @keyframes circleMove {
-
     0%,
     100% {
         transform: translate(0, 0);
@@ -92,7 +92,6 @@ img {
 }
 
 @keyframes circlePulse {
-
     0%,
     100% {
         opacity: 0.6;
@@ -199,12 +198,6 @@ footer {
     animation: fadeInUp 1s ease-in-out 1s forwards;
 }
 
-.made-with-love {
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-bottom: 5px;
-}
-
 .heart {
     position: relative;
     color: #cb0d3f;
@@ -236,7 +229,6 @@ footer {
 }
 
 @keyframes colorChange {
-
     0%,
     100% {
         color: #cb0d3f;
@@ -357,7 +349,7 @@ section.animate .section-description {
 
 .info-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     list-style: none;
     padding: 0;
@@ -453,7 +445,7 @@ section.animate .info-list {
 
 .features-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     list-style: none;
     padding: 0;
@@ -564,6 +556,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav li {
@@ -599,4 +592,121 @@ nav a[href="bugbounty.html"]::after {
 
 nav a:hover::after {
     transform: scaleX(1);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        margin-top: 15%;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .logo {
+        height: 8rem;
+    }
+
+    .description,
+    .go-back {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .info-icon,
+    .feature-icon {
+        font-size: 3rem;
+    }
+
+    .info-text,
+    .feature-description,
+    .made-with-love {
+        font-size: 1rem;
+    }
+
+    .features-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 20%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .logo {
+        height: 6rem;
+    }
+
+    .description,
+    .go-back {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .info-icon,
+    .feature-icon {
+        font-size: 2.5rem;
+    }
+
+    .info-text,
+    .feature-description,
+    .made-with-love {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    .container {
+        margin-top: 30%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        height: 5rem;
+    }
+
+    .description,
+    .go-back {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .info-icon,
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .info-text,
+    .feature-description,
+    .made-with-love {
+        font-size: 0.8rem;
+    }
 }

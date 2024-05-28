@@ -1,6 +1,6 @@
 .download-container {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -94,4 +94,22 @@
     transform: translateX(-50%);
     opacity: 0;
     animation: floatHeart 2s infinite;
+}
+
+@media screen and (max-width: 1200px) {
+    .download-container {
+        padding-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .download-container {
+        padding-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .download-container {
+        padding-top: 0.5rem;
+    }
 }
