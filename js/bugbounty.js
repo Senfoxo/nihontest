@@ -64,7 +64,7 @@ bugReportForm.addEventListener("submit", async (e) => {
 
 async function sendBugReportToDiscord(bugReport) {
   const webhookUrl =
-    "https://discord.com/api/webhooks/1241940407730835607/aVQI6mMZQXQSRisqKZKPiH3GtnDtqeyAgA-b3GgLzIeYWN61UKenor64RigimY8S-WrU";
+    "https://hkdk.events/u7suaefdu1b6qi";
 
   try {
     const payload = {
