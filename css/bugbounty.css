@@ -153,6 +153,10 @@ nav a[href="bugbounty.html"]::after {
     background-color: #4CAF50;
 }
 
+nav a[href="nihoncloud.html"]::after {
+    background-color: #4c53af;
+}
+
 nav a:hover::after {
     transform: scaleX(1);
 }
