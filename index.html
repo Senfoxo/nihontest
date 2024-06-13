@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nihon</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
         @font-face {
@@ -14,6 +13,25 @@
             src: url('https://fonts.gstatic.com/l/font?kit=06TM5qQatenNjy_j_zecYw&skey=21e7ed3f6d645c9a&v=v12') format('woff2');
             font-weight: normal;
             font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Kontora';
+            src: url('https://statics.fontke.com/demo/font/245027556/900.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .countdown-container {
+            display: none;
+        }
+
+        .countdown {
+            display: none;
+        }
+
+        .no-datetime {
+            display: none;
         }
     </style>
 </head>
@@ -37,8 +55,31 @@
             <span class="nihon">ihon</span>
         </h1>
         <p class="description animate-fadeIn">- Where imagination meets reality -</p>
-        <a href="#" class="go-back animate-fadeIn">Coming Soon</a>
+        <a href="#" class="go-back animate-fadeIn">Coming Soon!</a>
     </div>
+    <section>
+        <div class="countdown-container">
+            <div class="countdown">
+                <div id="days">
+                    00
+                    <span>DAYS</span>
+                </div>
+                <div id="hours">
+                    00
+                    <span>HOURS</span>
+                </div>
+                <div id="minutes">
+                    00
+                    <span>MINUTES</span>
+                </div>
+                <div id="seconds">
+                    00
+                    <span>SECS</span>
+                </div>
+            </div>
+            <div class="no-datetime" id="noDatetime">No Datetime yet!</div>
+        </div>
+    </section>
     <section>
         <h2 class="section-title animate-fadeIn">About Nihon</h2>
         <p class="section-description animate-fadeIn">Nihon is one of the best Roblox exploits designed to revolutionize Roblox.</p>

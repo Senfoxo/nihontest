@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Kontora', sans-serif;
     background-color: #0d0d0d;
     margin: 0;
     display: flex;
@@ -457,7 +457,7 @@ footer {
 }
 
 .option {
-    font-size: 13px;
+    font-size: 11px;
     color: #eee;
     padding: 0.01rem 1rem;
     cursor: pointer;
