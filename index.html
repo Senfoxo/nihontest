@@ -1,49 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nihon</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <style>
-        @font-face {
-            font-family: 'Segoe UI Symbol';
-            src: url('https://fonts.gstatic.com/l/font?kit=06TM5qQatenNjy_j_zecYw&skey=21e7ed3f6d645c9a&v=v12') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
-        @font-face {
-            font-family: 'Kontora';
-            src: url('https://statics.fontke.com/demo/font/245027556/900.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        .countdown-container {
-            display: none;
-        }
-
-        .countdown {
-            display: none;
-        }
-
-        .no-datetime {
-            display: none;
+        body {
+            font-family: 'Roboto', sans-serif;
         }
     </style>
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bugbounty.html">Bug Bounty</a></li>
-            <li><a href="nihoncloud.html">Nihon Cloud</a></li>
-        </ul>
-    </nav>
     <div class="background">
         <div class="circle circle-1"></div>
         <div class="circle circle-2"></div>
@@ -58,43 +30,20 @@
         <a href="#" class="go-back animate-fadeIn">Coming Soon!</a>
     </div>
     <section>
-        <div class="countdown-container">
-            <div class="countdown">
-                <div id="days">
-                    00
-                    <span>DAYS</span>
-                </div>
-                <div id="hours">
-                    00
-                    <span>HOURS</span>
-                </div>
-                <div id="minutes">
-                    00
-                    <span>MINUTES</span>
-                </div>
-                <div id="seconds">
-                    00
-                    <span>SECS</span>
-                </div>
-            </div>
-            <div class="no-datetime" id="noDatetime">No Datetime yet!</div>
-        </div>
-    </section>
-    <section>
         <h2 class="section-title animate-fadeIn">About Nihon</h2>
         <p class="section-description animate-fadeIn">Nihon is one of the best Roblox exploits designed to revolutionize Roblox.</p>
         <p class="section-description animate-fadeIn">With its user interface and beautiful features, Nihon allows its users to exploit like never before.</p>
         <ul class="info-list">
             <li class="info-item animate-fadeIn">
-                <div class="info-icon" style="font-family: 'Segoe UI Symbol';">&#x1f30d;</div>
+                <div class="info-icon">&#x1f30d;</div>
                 <p class="info-text">Founded in 2020 with a mission to connect people worldwide and provide a trusted service.</p>
             </li>
             <li class="info-item animate-fadeIn">
-                <div class="info-icon" style="font-family: 'Segoe UI Symbol';">&#x1f4e3;</div>
+                <div class="info-icon">&#x1f4e3;</div>
                 <p class="info-text">Developed by the best developers in the industry, Nihon offers an unparalleled experience.</p>
             </li>
             <li class="info-item animate-fadeIn">
-                <div class="info-icon" style="font-family: 'Segoe UI Symbol';">&#x1f5fe;</div>
+                <div class="info-icon">&#x1f5fe;</div>
                 <p class="info-text">Trusted by many satisfied users globally who appreciate Nihon's power and reliability.</p>
             </li>
         </ul>
@@ -103,22 +52,22 @@
         <h2 class="section-title animate-fadeIn">Features</h2>
         <ul class="features-list">
             <li class="feature-item animate-fadeIn">
-                <div class="feature-icon" style="font-family: 'Segoe UI Symbol';">&#x1f50b;</div>
+                <div class="feature-icon">&#x1f50b;</div>
                 <h3 class="feature-title">Blazing Fast Performance</h3>
                 <p class="feature-description">Experience lightning-fast loading times and smooth navigation.</p>
             </li>
             <li class="feature-item animate-fadeIn">
-                <div class="feature-icon" style="font-family: 'Segoe UI Symbol';">&#x1f510;</div>
+                <div class="feature-icon">&#x1f510;</div>
                 <h3 class="feature-title">Enhanced Security</h3>
                 <p class="feature-description">Your data is protected with state-of-the-art encryption and secure protocols.</p>
             </li>
             <li class="feature-item animate-fadeIn">
-                <div class="feature-icon" style="font-family: 'Segoe UI Symbol';">&#x1f3a8;</div>
+                <div class="feature-icon">&#x1f3a8;</div>
                 <h3 class="feature-title">Customizable Interface</h3>
                 <p class="feature-description">Personalize your Nihon experience with themes, layouts, and custom settings.</p>
             </li>
             <li class="feature-item animate-fadeIn">
-                <div class="feature-icon" style="font-family: 'Segoe UI Symbol';">&#x1f49a;</div>
+                <div class="feature-icon">&#x1f49a;</div>
                 <h3 class="feature-title">Bug Bounty Program</h3>
                 <p class="feature-description">Get rewarded for reporting bugs and vulnerabilities.</p>
             </li>
@@ -130,10 +79,9 @@
         <a href="https://discord.gg/3Syz24X2UD" class="go-back animate-fadeIn" target="_blank">Join Discord</a>
     </section>
     <footer>
-        <p class="made-with-love">Made With <span class="heart" style="font-family: 'Segoe UI Symbol';">&#x2764;</span> By Nihon Devs</p>
+        <p class="made-with-love">Made With <span class="heart">&#x2764;</span> By Nihon Devs</p>
     </footer>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823" crossorigin="anonymous"></script>
     <script>
         function isElementInViewport(el) {
             const rect = el.getBoundingClientRect();
@@ -163,23 +111,12 @@
             });
         }
 
-        function disableDragNavLinks() {
-            const navLinks = document.querySelectorAll('nav a');
-            navLinks.forEach(link => {
-                link.addEventListener('dragstart', ev => {
-                    ev.preventDefault();
-                });
-            });
-        }
-
         window.addEventListener('load', () => {
             animateElements();
             disableDragImages();
-            disableDragNavLinks();
         });
 
         window.addEventListener('scroll', animateElements);
     </script>
 </body>
-
 </html>

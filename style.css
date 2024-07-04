@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #0d0d0d;
     margin: 0;
     display: flex;
@@ -25,11 +25,9 @@ body {
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 50%;
     }
-
     100% {
         background-position: 0% 50%;
     }
@@ -67,29 +65,22 @@ body {
 }
 
 @keyframes circleMove {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translate(0, 0);
     }
-
     33% {
         transform: translate(60px, 60px);
     }
-
     66% {
         transform: translate(-60px, -60px);
     }
 }
 
 @keyframes circlePulse {
-
-    0%,
-    100% {
+    0%, 100% {
         opacity: 0.6;
         transform: scale(1);
     }
-
     50% {
         opacity: 0.4;
         transform: scale(1.05);
@@ -150,15 +141,6 @@ h1 {
     color: #fff;
 }
 
-@keyframes scaleUp {
-    0% {
-        transform: scale(0.5);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -201,20 +183,13 @@ footer {
 }
 
 @keyframes colorChange {
-
-    0%,
-    100% {
+    0%, 100% {
         color: #ff4d79;
     }
-
-    16.67%,
-    50%,
-    83.33% {
+    16.67%, 50%, 83.33% {
         color: #a00035;
     }
-
-    33.33%,
-    66.67% {
+    33.33%, 66.67% {
         color: #ff4d79;
     }
 }
@@ -224,122 +199,31 @@ footer {
         opacity: 0;
         transform: translate(-50%, 0) scale(0.7) rotate(0deg);
     }
-
     20% {
         opacity: 1;
         transform: translate(-60%, -20px) scale(0.9) rotate(-15deg);
     }
-
     40% {
         opacity: 0.8;
         transform: translate(-50%, -40px) scale(1) rotate(0deg);
     }
-
     60% {
         opacity: 0.4;
         transform: translate(-40%, -60px) scale(1.1) rotate(15deg);
     }
-
     80% {
         opacity: 0.1;
         transform: translate(-50%, -80px) scale(1.2) rotate(0deg);
     }
-
     100% {
         opacity: 0;
         transform: translate(-50%, -100px) scale(1.3) rotate(0deg);
     }
 }
 
-.download-container {
-    text-align: center;
-    padding-top: 2rem;
-}
-
-.progress-bar-container {
-    position: relative;
-    width: 400px;
-    margin: 2rem auto;
-}
-
-.progress-text {
-    position: absolute;
-    top: 50%;
-    left: 44%;
-    transform: translate(-50%, -50%);
-    font-size: 1.4rem;
-    color: #eee;
-    transition: opacity 0.6s ease-in-out;
-}
-
-.checkmark-container {
-    display: none;
-    position: absolute;
-    top: 105%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.checkmark {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    stroke-width: 2;
-    stroke: #fff;
-    stroke-miterlimit: 10;
-    margin: 1rem auto;
-    box-shadow: inset 0px 0px 0px #cb0d3f;
-    animation: fill .5s ease-in-out .5s forwards;
-}
-
-.checkmark-circle {
-    stroke-dasharray: 166;
-    stroke-dashoffset: 166;
-    stroke-width: 2;
-    stroke-miterlimit: 10;
-    stroke: #cb0d3f;
-    fill: none;
-    animation: stroke 0.8s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-}
-
-.checkmark-check {
-    transform-origin: 50% 50%;
-    stroke-dasharray: 48;
-    stroke-dashoffset: 48;
-    animation: stroke 0.4s cubic-bezier(0.65, 0, 0.45, 1) 1s forwards;
-}
-
-@keyframes stroke {
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes fill {
-    100% {
-        box-shadow: inset 0px 0px 0px 60px #cb0d3f;
-    }
-}
-
 .animate-fadeIn {
     opacity: 0;
     animation: fadeInUp 1.2s ease-in-out forwards;
-}
-
-.download-container .heart {
-    position: relative;
-    color: #cb0d3f;
-    animation: colorChange 6s infinite;
-}
-
-.download-container .heart::after {
-    content: "❤";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    animation: floatHeart 2s infinite;
 }
 
 section {
@@ -365,8 +249,7 @@ section.animate {
     padding: 0 1rem;
 }
 
-.section-title::before,
-.section-title::after {
+.section-title::before, .section-title::after {
     content: '';
     position: absolute;
     width: 50px;
@@ -385,8 +268,7 @@ section.animate {
     right: -60px;
 }
 
-section.animate .section-title::before,
-section.animate .section-title::after {
+section.animate .section-title::before, section.animate .section-title::after {
     width: 80px;
 }
 
@@ -495,7 +377,6 @@ section.animate .info-list {
         opacity: 0;
         transform: scale(0.5);
     }
-
     100% {
         opacity: 1;
         transform: scale(1);
