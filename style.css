@@ -8,164 +8,137 @@ body {
     align-items: center;
     min-height: 100vh;
     cursor: default;
-    font-size: 15.6px; 
+    font-size: 21.84px;
 }
-
 .container {
-    margin-top: 9.6%; 
+    margin-top: 13.44%;
     text-align: center;
-    max-width: 780px; 
-    padding: 0.96rem; 
+    max-width: 1092px;
+    padding: 1.344rem;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 h1 {
-    font-size: 5.76rem; 
-    margin-bottom: 1.92rem; 
+    font-size: 8.064rem;
+    margin-bottom: 2.688rem;
     color: #cb0d3f;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    margin-right: 1.92rem; 
+    margin-right: 2.688rem;
     font-weight: 700;
 }
-
 .logo {
-    height: 9.6rem; 
-    margin-right: -0.96rem; 
-    margin-top: -1.32rem; 
+    height: 13.44rem;
+    margin-right: -1.344rem;
+    margin-top: -1.848rem;
     position: relative;
 }
-
 .description {
-    font-size: 1.32rem; 
+    font-size: 1.848rem;
     color: #ccc;
-    margin-bottom: 2.88rem; 
+    margin-bottom: 4.032rem;
 }
-
 .button-container {
     display: flex;
-    gap: 0.96rem; 
+    gap: 1.344rem;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .button {
-    font-size: 1.32rem; 
+    font-size: 1.848rem;
     color: #fff;
     text-decoration: none;
-    padding: 0.78rem 1.44rem; 
+    padding: 1.092rem 2.016rem;
     border-radius: 0;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
     display: inline-flex;
     align-items: center;
-    min-width: 180px; 
+    min-width: 252px;
     justify-content: center;
 }
-
 .download-button {
-    border: 2px solid #cb0d3f;
+    border: 2.8px solid #cb0d3f;
 }
-
 .discord-button {
-    border: 2px solid #7289DA;
+    border: 2.8px solid #7289DA;
 }
-
 .coming-soon {
-    font-size: 0.96rem; 
-    margin-left: 0.48rem; 
+    font-size: 1.344rem;
+    margin-left: 0.672rem;
     opacity: 0.7;
 }
-
 .button:hover {
     transform: scale(1.05);
 }
-
 .button:active {
     transform: scale(1);
     transition: transform 0.1s;
 }
-
 .download-button:hover {
     background-color: #cb0d3f;
 }
-
 .discord-button:hover {
     background-color: #7289DA;
 }
-
 footer {
     margin-top: auto;
-    padding: 0.96rem; 
+    padding: 1.344rem;
     text-align: center;
 }
-
 .made-with-love {
-    font-size: 1.14rem; 
+    font-size: 1.596rem;
     color: #ccc;
-    margin-bottom: 4.8px; 
+    margin-bottom: 6.72px;
 }
-
 .fade-in {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(28px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
-
 body.loaded .fade-in {
     opacity: 1;
     transform: translateY(0);
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1075px) {
     body {
-        font-size: 14.4px; 
+        font-size: 20.16px;
     }
-
     .container {
-        margin-top: 4.8%; 
+        margin-top: 6.72%;
     }
-
     h1 {
-        font-size: 4.2rem; 
+        font-size: 5.88rem;
     }
-
     .logo {
-        height: 7.2rem; 
+        height: 10.08rem;
     }
-
     .button-container {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-
     .button {
         width: 100%;
-        max-width: 300px; 
-        margin-bottom: 0.96rem; 
+        max-width: 420px;
+        margin-bottom: 1.344rem;
     }
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 672px) {
     body {
-        font-size: 13.2px; 
+        font-size: 18.48px;
     }
-
     h1 {
-        font-size: 3.36rem; 
+        font-size: 4.704rem;
     }
-
     .logo {
-        height: 5.4rem; 
+        height: 7.56rem;
     }
-
     .button {
-        font-size: 1.2rem; 
-        padding: 0.66rem 1.2rem; 
+        font-size: 1.68rem;
+        padding: 0.924rem 1.68rem;
     }
 }
