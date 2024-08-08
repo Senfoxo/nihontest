@@ -10,91 +10,21 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="background">
-        <div class="circle circle-1"></div>
-        <div class="circle circle-2"></div>
-        <div class="circle circle-3"></div>
-    </div>
-    <div class="container">
-        <h1 class="animate-fadeIn">
+    <div class="container fade-in">
+        <h1>
             <img src="assets/logo.png" alt="Nihon Logo" class="logo">
             <span class="nihon">ihon</span>
         </h1>
-        <p class="description animate-fadeIn">- Where imagination meets reality -</p>
-        <a href="#" class="go-back animate-fadeIn">Download</a>
+        <p class="description">- Where Imagination Meets Reality -</p>
+        <div class="button-container">
+            <a href="#" class="button download-button">Download <span class="coming-soon">Coming Soon</span></a>
+            <a href="https://discord.gg/3Syz24X2UD" class="button discord-button" target="_blank">Discord</a>
+        </div>
     </div>
-    <section>
-        <h2 class="section-title animate-fadeIn">About Nihon</h2>
-        <p class="section-description animate-fadeIn">Nihon is one of the best Roblox Interfaces designed to revolutionize Roblox.</p>
-        <p class="section-description animate-fadeIn">With its user interface and beautiful features.</p>
-        <ul class="info-list">
-            <li class="info-item animate-fadeIn">
-                <div class="info-icon">&#x1f30d;</div>
-                <p class="info-text">Founded in 2020 with a mission to connect people worldwide and provide a trusted service.</p>
-            </li>
-            <li class="info-item animate-fadeIn">
-                <div class="info-icon">&#x1f4e3;</div>
-                <p class="info-text">Developed by the best developers in the industry, Nihon offers an unparalleled experience.</p>
-            </li>
-            <li class="info-item animate-fadeIn">
-                <div class="info-icon">&#x1f5fe;</div>
-                <p class="info-text">Trusted by many satisfied users globally who appreciate Nihon's power and reliability.</p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2 class="section-title animate-fadeIn">Features</h2>
-        <ul class="features-list">
-            <li class="feature-item animate-fadeIn">
-                <div class="feature-icon">&#x1f50b;</div>
-                <h3 class="feature-title">Blazing Fast Performance</h3>
-                <p class="feature-description">Experience lightning-fast loading times and smooth navigation.</p>
-            </li>
-            <li class="feature-item animate-fadeIn">
-                <div class="feature-icon">&#x1f510;</div>
-                <h3 class="feature-title">Enhanced Security</h3>
-                <p class="feature-description">Your data is protected with state-of-the-art encryption and secure protocols.</p>
-            </li>
-            <li class="feature-item animate-fadeIn">
-                <div class="feature-icon">&#x1f3a8;</div>
-                <h3 class="feature-title">Customizable Interface</h3>
-                <p class="feature-description">Personalize your Nihon experience with themes, layouts, and custom settings.</p>
-            </li>
-            <li class="feature-item animate-fadeIn">
-                <div class="feature-icon">&#x1f49a;</div>
-                <h3 class="feature-title">Bug Bounty Program</h3>
-                <p class="feature-description">Get rewarded for reporting bugs and vulnerabilities.</p>
-            </li>
-        </ul>
-    </section>
-    <section class="discord-section animate-fadeIn">
-        <h2 class="section-title">Join Our Community</h2>
-        <p class="section-description">Connect with like-minded individuals, discuss ideas, and get support from our vibrant community.</p>
-        <a href="https://discord.gg/3Syz24X2UD" class="go-back animate-fadeIn" target="_blank">Join Discord</a>
-    </section>
-    <footer>
-        <p class="made-with-love">Made With <span class="heart">&#x2764;</span> By Nihon Devs</p>
+    <footer class="fade-in">
+        <p class="made-with-love">Made With ❤️ By Nihon Devs</p>
     </footer>
     <script>
-        function isElementInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        function animateElements() {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                if (isElementInViewport(section)) {
-                    section.classList.add('animate');
-                }
-            });
-        }
-
         function disableDragImages() {
             const images = document.querySelectorAll('img');
             images.forEach(img => {
@@ -103,13 +33,10 @@
                 });
             });
         }
-
         window.addEventListener('load', () => {
-            animateElements();
             disableDragImages();
+            document.body.classList.add('loaded');
         });
-
-        window.addEventListener('scroll', animateElements);
     </script>
 </body>
 </html>
