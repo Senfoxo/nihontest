@@ -1,42 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="google-adsense-account" content="ca-pub-4528405650705823">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihon</title>
-    <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823"
-     crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="container fade-in">
-        <h1>
-            <img src="assets/logo.png" alt="Nihon Logo" class="logo">
-            <span class="nihon">ihon</span>
-        </h1>
-        <p class="description">- Where Imagination Meets Reality -</p>
-        <div class="button-container">
-            <a href="#" class="button download-button">Download <span class="coming-soon">Coming Soon</span></a>
-            <a href="https://discord.gg/3Syz24X2UD" class="button discord-button" target="_blank">Discord</a>
-        </div>
-    </div>
-    <footer class="fade-in">
-        <p class="made-with-love">Made With ❤️ By Nihon Devs</p>
-    </footer>
-    <script>
-        function disableDragImages() {
-            const images = document.querySelectorAll('img');
-            images.forEach(img => {
-                img.addEventListener('dragstart', ev => {
-                    ev.preventDefault();
-                });
-            });
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823" crossorigin="anonymous"></script>
+    <title>Nihon 3.0 - Where Imagination Meets Reality</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1E2124;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            cursor: default;
+            font-size: 15.6px;
+            color: #ccc;
         }
-        window.addEventListener('load', () => {
-            disableDragImages();
-            document.body.classList.add('loaded');
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0.96rem;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 5.76rem;
+            margin-bottom: 1.92rem;
+            color: #cb0d3f;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.88rem;
+            color: #cb0d3f;
+            margin-bottom: 1.44rem;
+            text-align: center;
+        }
+
+        .logo {
+            height: 9.6rem;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 0.96rem;
+            justify-content: center;
+            margin-bottom: 2.88rem;
+        }
+
+        .button {
+            font-size: 1.32rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.78rem 1.44rem;
+            border-radius: 0;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 180px;
+        }
+
+        .download-button {
+            border: 2px solid #cb0d3f;
+        }
+
+        .discord-button {
+            border: 2px solid #7289DA;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+        }
+
+        .download-button:hover {
+            background-color: #cb0d3f;
+        }
+
+        .discord-button:hover {
+            background-color: #7289DA;
+        }
+
+        .section {
+            margin: 3.84rem 0;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .image-placeholder {
+            background-color: #2c2f33;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.48rem;
+        }
+
+        .dropdown {
+            background-color: #2c2f33;
+            margin-bottom: 0.72rem;
+            border-radius: 0.24rem;
+            overflow: hidden;
+            border: 1px solid #3a3d41;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-header {
+            background-color: #2c2f33;
+            color: #fff;
+            padding: 0.72rem 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1rem;
+        }
+
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 1rem;
+        }
+
+        .dropdown-content p {
+            margin: 0;
+            padding: 0.72rem 0;
+        }
+
+        .ad-placeholder {
+            background-color: #2c2f33;
+            color: #fff;
+            padding: 1.44rem;
+            margin: 1.92rem 0;
+            text-align: center;
+            border: 1px solid #cb0d3f;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #2c2f33;
+            padding: 1.92rem 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #cb0d3f;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background-color: #2c2f33;
+            margin-bottom: 0.72rem;
+            border-radius: 50%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .image-grid, .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .button-container {
+                flex-direction: column;
+            }
+
+            .image-grid, .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="assets/images/logo.png" alt="Nihon Logo" class="logo">
+        <h1>Nihon 3.0</h1>
+        <div class="button-container">
+            <a href="#" class="button download-button">Download Nihon 3.0</a>
+            <a href="https://discord.gg/3Syz24X2UD" class="button discord-button" target="_blank">Join Discord</a>
+        </div>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823"
+        crossorigin="anonymous"></script>
+   <!-- 1. Ad -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-4528405650705823"
+        data-ad-slot="1080598324"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+
+        <section class="section">
+            <h2>Introducing Nihon 3.0</h2>
+            <p>Universal Aim Aligner cheat for Roblox, CS:GO, Overwatch, Fortnite & more. Trained on Smart AI.</p>
+            <div class="image-placeholder">
+                [Placeholder for Nihon 3.0 Image]
+            </div>
+        </section>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823"
+        crossorigin="anonymous"></script>
+   <!-- 6. Ad -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-4528405650705823"
+        data-ad-slot="5324294778"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+
+        <section class="section">
+            <h2>User Interface</h2>
+            <div class="image-grid">
+                <div class="image-placeholder">[UI Image 1]</div>
+                <div class="image-placeholder">[UI Image 2]</div>
+                <div class="image-placeholder">[UI Image 3]</div>
+                <div class="image-placeholder">[UI Image 4]</div>
+            </div>
+        </section>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823"
+        crossorigin="anonymous"></script>
+   <!-- 2. Ad -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-4528405650705823"
+        data-ad-slot="3081274818"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+
+        <section class="section">
+            <h2>How does it work?</h2>
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h3>1. Load Model</h3>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>Load a model for the Aim Aligner to be able to work. We have built-in models and users can create their own too.</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h3>2. Train Images</h3>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>Nihon 3.0 gets better the more you use it. Our AI will train images to improve the Aim Aligner's accuracy and efficiency.</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h3>3. Customize</h3>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>Create a configuration and adjust the settings to make the most out of your model. Whatever works best for you.</p>
+                </div>
+            </div>
+        </section>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823"
+        crossorigin="anonymous"></script>
+   <!-- 3. Ad -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-4528405650705823"
+        data-ad-slot="3711830203"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+
+        <section class="section">
+            <h2>FAQ</h2>
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h3>What's an External?</h3>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>An external cheat executes externally to the game process. Nihon 3.0 uses AI to collect and train model data such as an enemy's skin or color to better improve the cheat capabilities such as aim aligner accuracy, visual detection and more.</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h3>Is Nihon 3.0 Safe?</h3>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>Nihon 3.0 is built to be undetectable. However, if a player is blatantly cheating and gets reported, then there's a risk of an account ban on any game. Essentially- you won't be automatically detected by using Nihon 3.0 but there's a risk depending on your playstyle.</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <h3>Is Nihon 3.0 Free?</h3>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>Yes. Our product is supported by advertisements, we keep this to a minimum.</p>
+                </div>
+            </div>
+        </section>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823"
+        crossorigin="anonymous"></script>
+   <!-- 4. Ad -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-4528405650705823"
+        data-ad-slot="2398748537"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+
+        <section class="section">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">[Placeholder]</div>
+                    <h3>Accurate Aim Aligner</h3>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">[Placeholder]</div>
+                    <h3>Highly Customizable</h3>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">[Placeholder]</div>
+                    <h3>Universal Game Support</h3>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">[Placeholder]</div>
+                    <h3>Undetected Features</h3>
+                </div>
+            </div>
+        </section>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823"
+        crossorigin="anonymous"></script>
+   <!-- 5. Ad -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-4528405650705823"
+        data-ad-slot="2459863253"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+
+        <section class="section">
+            <h2>Why are you here?</h2>
+            <div class="button-container">
+                <a href="#" class="button download-button">Get Nihon 3.0</a>
+                <a href="https://discord.gg/3Syz24X2UD" class="button discord-button" target="_blank">Join Discord</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="https://discord.gg/3Syz24X2UD">Contact Us</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <p>&copy; Vaclav (Jisll) Nihon Developer. All rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.dropdown-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const toggle = header.querySelector('.toggle');
+                content.classList.toggle('active');
+                toggle.classList.toggle('active');
+                if (content.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    content.style.maxHeight = null;
+                }
+            });
         });
     </script>
+     <script src="noab.js"></script> 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4528405650705823" crossorigin="anonymous"></script>
 </body>
+
 </html>
